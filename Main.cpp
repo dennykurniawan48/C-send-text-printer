@@ -30,8 +30,8 @@ int main() {
 
 	int userInp;
 	do {
-	std::cout << "Enter printer number: ";
-	std::cin >> userInp;
+		std::cout << "Enter printer number: ";
+		std::cin >> userInp;
 	}while(userInp >= printerList.size());
 
 	bool openPrinter = OpenPrinter((LPSTR)printerList[userInp].c_str(), &h, NULL); //Open The Printer
